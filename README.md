@@ -15,7 +15,6 @@ O **SimulaBancoTerminal** é um sistema bancário simulado implementado em Java,
 - [Funcionalidades Implementadas](#funcionalidades-implementadas)
 - [Observações Importantes](#observações-importantes)
 - [Melhorias Futuras](#melhorias-futuras)
-- [Contribuições](#contribuições)
 - [Licença](#licença)
 
 ---
@@ -148,5 +147,5 @@ O sistema oferece as seguintes funcionalidades:
 - `Implementar login/senha para acessar contas.`
 
 ## Licença
-Este projeto está licenciado sob a [MIT License](#LICENSE). 
+Este projeto está licenciado sob a [MIT License](#https://github.com/pauloandresdf/bank-account-manager/tree/main?tab=MIT-1-ov-file). 
 Consulte o arquivo LICENSE para mais detalhes

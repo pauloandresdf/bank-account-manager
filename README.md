@@ -129,22 +129,22 @@ O sistema oferece as seguintes funcionalidades:
 ## Melhorias Futuras
 
 1.Persistência de Dados :
-- `Implementar salvamento de contas em arquivos ou banco de dados (ex.: H2, MySQL).`
+- `Implementarei salvamento de contas em arquivos ou banco de dados (ex.: H2, MySQL).`
 
 2.Histórico de Transações :
-- `Registrar todas as operações realizadas (depósitos, saques, transferências).`
+- `Registrarei todas as operações realizadas (depósitos, saques, transferências).`
 
 3.Transferência entre Contas :
-- `Permitir que o usuário transfira valores entre contas diferentes.`
+- `Permitirei que o usuário transfira valores entre contas diferentes.`
 
 4.Interface Gráfica :
-- `Migrar de terminal para uma interface gráfica usando JavaFX ou Swing.`
+- `Migrarei de terminal para uma interface gráfica usando JavaFX ou Swing.`
 
 5.Testes Unitários :
-- `Adicionar testes automatizados para garantir a qualidade do código.`
+- `Adicionarei testes automatizados para garantir a qualidade do código.`
 
 6.Autenticação :
-- `Implementar login/senha para acessar contas.`
+- `Implementarei login/senha para acessar contas.`
 
 ## Licença
 Este projeto está licenciado sob a [MIT License](https://github.com/pauloandresdf/bank-account-manager/tree/main?tab=MIT-1-ov-file). 

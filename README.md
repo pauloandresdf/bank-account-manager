@@ -147,5 +147,5 @@ O sistema oferece as seguintes funcionalidades:
 - `Implementar login/senha para acessar contas.`
 
 ## Licença
-Este projeto está licenciado sob a [MIT License](#https://github.com/pauloandresdf/bank-account-manager/tree/main?tab=MIT-1-ov-file). 
+Este projeto está licenciado sob a [MIT License](https://github.com/pauloandresdf/bank-account-manager/tree/main?tab=MIT-1-ov-file). 
 Consulte o arquivo LICENSE para mais detalhes

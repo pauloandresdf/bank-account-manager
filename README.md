@@ -148,4 +148,5 @@ O sistema oferece as seguintes funcionalidades:
 - `Implementar login/senha para acessar contas.`
 
 ## Licença
-Este projeto está licenciado sob a MIT License . Consulte o arquivo LICENSE para mais detalhes
+Este projeto está licenciado sob a [MIT License](#LICENSE). 
+Consulte o arquivo LICENSE para mais detalhes

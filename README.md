@@ -18,7 +18,6 @@
 - [Arquitetura](#-arquitetura)
 - [Instalação e Execução](#-instalação-e-execução)
 - [Guia de Uso](#-guia-de-uso)
-- [Testes](#-testes)
 - [Roadmap](#-roadmap)
 - [Contribuições](#-contribuições)
 - [Licença](#-licença)

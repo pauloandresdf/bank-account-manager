@@ -6,7 +6,7 @@
 ![Licença](https://img.shields.io/badge/Licença-MIT-green)
 
 <p align="center">
-  <img src="https://via.placeholder.com/150?text=SimulaBanco" alt="Logo SimulaBanco"/>
+  <img src="https://static.vecteezy.com/system/resources/previews/011/731/606/original/hand-drawn-bank-building-illustration-png.png" alt="Logo SimulaBanco"/>
 </p>
 
 **SimulaBancoTerminal** é um sistema bancário simulado desenvolvido em Java, que opera através de uma interface de terminal. Este projeto demonstra a implementação de operações bancárias básicas utilizando o Spring Framework e padrões de projeto orientados a objetos.

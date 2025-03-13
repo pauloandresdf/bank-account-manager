@@ -1,151 +1,181 @@
 # SimulaBancoTerminal
 
-![Java](https://img.shields.io/badge/Java-17-blue) ![Spring](https://img.shields.io/badge/Spring-5.3.22-brightgreen) ![Maven](https://img.shields.io/badge/Maven-4.0.0-orange)
+![Java](https://img.shields.io/badge/Java-17-blue)
+![Spring](https://img.shields.io/badge/Spring-5.3.22-brightgreen)
+![Maven](https://img.shields.io/badge/Maven-4.0.0-orange)
+![Licença](https://img.shields.io/badge/Licença-MIT-green)
 
-O **SimulaBancoTerminal** é um sistema bancário simulado implementado em Java, projetado para ser executado em um terminal (console). Ele permite realizar operações básicas como criação de conta, depósito, saque e consulta de saldo. Este projeto utiliza o **Spring Framework** para gerenciamento de dependências e o **Maven** como ferramenta de build.
+<p align="center">
+  <img src="https://via.placeholder.com/150?text=SimulaBanco" alt="Logo SimulaBanco"/>
+</p>
 
----
+**SimulaBancoTerminal** é um sistema bancário simulado desenvolvido em Java, que opera através de uma interface de terminal. Este projeto demonstra a implementação de operações bancárias básicas utilizando o Spring Framework e padrões de projeto orientados a objetos.
 
-## Índice
+## 📋 Índice
 
-- [Visão Geral](#visão-geral)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Pré-requisitos](#pré-requisitos)
-- [Como Executar o Projeto](#como-executar-o-projeto)
-- [Funcionalidades Implementadas](#funcionalidades-implementadas)
-- [Observações Importantes](#observações-importantes)
-- [Melhorias Futuras](#melhorias-futuras)
-- [Licença](#licença)
+- [Recursos](#-recursos)
+- [Tecnologias](#-tecnologias)
+- [Arquitetura](#-arquitetura)
+- [Instalação e Execução](#-instalação-e-execução)
+- [Guia de Uso](#-guia-de-uso)
+- [Testes](#-testes)
+- [Roadmap](#-roadmap)
+- [Contribuições](#-contribuições)
+- [Licença](#-licença)
 
----
+## 🚀 Recursos
 
-## Visão Geral
-
-O **SimulaBancoTerminal** é um projeto educacional que simula um sistema bancário básico. Ele foi desenvolvido para ajudar iniciantes a aprender conceitos de programação orientada a objetos, uso de frameworks como Spring e ferramentas como Maven. O sistema interage com o usuário por meio de um menu no terminal, permitindo operações simples como criação de conta, depósito, saque e consulta de saldo.
-
----
-
-## Estrutura do Projeto
-
-A estrutura atual do projeto é organizada da seguinte forma:
-```
-simula-banco-terminal/
-└── SimulaBancoTerminal/
-    └── demo/
-        ├── src/main/java/com/example/bankingsystem/
-        │   ├── BankAccount.java           # Classe que representa uma conta bancária.
-        │   ├── BankingSystem.java         # Classe responsável por gerenciar contas e operações.
-        │   └── TerminalController.java    # Classe principal com o menu interativo no terminal.
-        ├── target/classes/com/example/bankingsystem/
-        │   └── Arquivos .class compilados.
-        └── pom.xml                        # Arquivo de configuração do Maven.
-```
-
-### Descrição dos Diretórios e Classes
-
-1. **`src/main/java/com/example/bankingsystem/`**:
-   - Contém o código-fonte principal do projeto.
-   - Classes principais:
-     - **`BankAccount`**: Representa uma conta bancária individual, com atributos como titular, número da conta e saldo. Métodos incluem `depositar`, `sacar` e `consultarSaldo`.
-     - **`BankingSystem`**: Gerencia múltiplas contas e realiza operações como criar conta, depósito, saque e consulta de saldo.
-     - **`TerminalController`**: Implementa o menu interativo no terminal, capturando entradas do usuário e delegando operações para as classes `BankAccount` e `BankingSystem`.
-
-2. **`target/classes/com/example/bankingsystem/`**:
-   - Contém os arquivos `.class` compilados pelo Maven.
-   - Esse diretório é gerado automaticamente durante o build e não deve ser editado manualmente.
-
-3. **`pom.xml`**:
-   - Define as configurações do projeto Maven, incluindo dependências e plugins.
-
----
-
-## Pré-requisitos
-
-Antes de executar o projeto, certifique-se de ter os seguintes requisitos instalados:
-
-1. **Java 17**: O projeto foi desenvolvido usando a versão LTS do Java 17.
-2. **Maven**: Ferramenta de build usada para compilar e executar o projeto.
-3. **Git**: Para clonar o repositório (opcional).
-
----
-
-## Como Executar o Projeto
-
-### 1. Clone o Repositório
-Clone o repositório para sua máquina local:
-```bash
-git clone https://github.com/pauloandresdf/simula-banco-terminal.git
-cd simula-banco-terminal/SimulaBancoTerminal/demo
-```
-### 2. Compile o Projeto
-Use o Maven para compilar o projeto:
-```
-mvn clean install
-```
-### 3. Execute o Projeto
-Execute o programa diretamente via Maven:
-```
-mvn spring-boot:run
-```
-Ou execute o arquivo JAR gerado após o build:
-```
-java -jar target/demo-1.0-SNAPSHOT.jar
-```
-### 4. Interaja com o Sistema
-Após iniciar o programa, siga as instruções exibidas no terminal para interagir com o sistema. As opções disponíveis incluem:
-
-- `Criar conta.`
-- `Depositar, sacar e consultar saldo.`
-- `Sair do sistema.`
-
-## Funcionalidades Implementadas
 O sistema oferece as seguintes funcionalidades:
 
-1.Criação de Conta :
-- `Crie uma nova conta bancária informando o nome do titular e o número da conta.`
-  
-2.Operações Bancárias :
-- `Depósito : Adicione dinheiro à sua conta.`
-- `Saque : Retire dinheiro da sua conta, se houver saldo suficiente.`
-- `Consulta de Saldo : Verifique o saldo atual da sua conta.`
-  
-3.Menu Interativo :
-- `Um menu simples e intuitivo no terminal permite que o usuário escolha entre as opções disponíveis. A classe TerminalController é responsável por implementar esse menu.`
+- **Gerenciamento de Contas**
+  - Criação de contas bancárias com validação de dados
+  - Identificação por número e titular
 
-## Observações Importantes
+- **Operações Financeiras**
+  - Depósitos com validação de valores
+  - Saques com verificação de saldo disponível
+  - Consulta de saldo atualizado
 
-1.Diretório Extra (demo) :
-- `A presença do diretório SimulaBancoTerminal/demo/ pode causar confusão na estrutura do projeto. Para simplificar, considere mover o conteúdo de demo/src/main/java para a raiz do projeto ou configurar demo como um módulo Maven.`
+- **Recursos Adicionais**
+  - Listagem de todas as contas cadastradas
+  - Histórico de transações com data e hora
+  - Interface interativa via terminal
 
-2.Diretório target :
-- `O diretório target é gerado automaticamente pelo Maven e contém os arquivos compilados. Ele não deve ser editado manualmente e deve ser ignorado no controle de versão (adicione /target/ ao .gitignore).`
+## 💻 Tecnologias
 
-3.Persistência de Dados :
-- `Atualmente, os dados são armazenados apenas na memória volátil. Isso significa que todas as informações são perdidas ao encerrar o programa.`
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-4.Classe TerminalController :
-- `Esta classe é o ponto de entrada do sistema e gerencia a interação com o usuário. Ela utiliza métodos das classes BankAccount e BankingSystem para realizar operações.`
+- **Java 17**: Linguagem de programação principal
+- **Spring Framework 5.3.22**: Para injeção de dependências e gerenciamento de componentes
+- **Maven**: Ferramenta de automação de build e gerenciamento de dependências
+- **JUnit**: Framework para testes unitários
 
-## Melhorias Futuras
+## 🏗️ Arquitetura
 
-1.Persistência de Dados :
-- `Implementarei salvamento de contas em arquivos ou banco de dados (ex.: H2, MySQL).`
+A aplicação segue uma arquitetura baseada em componentes:
 
-2.Histórico de Transações :
-- `Registrarei todas as operações realizadas (depósitos, saques, transferências).`
+```
+simula-banco-terminal/
+├── src/main/java/com/example/bankingsystem/
+│   ├── BankAccount.java         # Entidade que representa uma conta bancária
+│   ├── BankingSystem.java       # Serviço que gerencia as operações bancárias
+│   ├── TerminalController.java  # Controlador para interface com o usuário
+│   └── Main.java                # Classe principal com configuração Spring
+└── pom.xml                      # Configuração do projeto Maven
+```
 
-3.Transferência entre Contas :
-- `Permitirei que o usuário transfira valores entre contas diferentes.`
+### Componentes Principais
 
-4.Interface Gráfica :
-- `Migrarei de terminal para uma interface gráfica usando JavaFX ou Swing.`
+#### 1. BankAccount
+Representa uma conta bancária individual com métodos para operações financeiras e rastreamento de histórico.
 
-5.Testes Unitários :
-- `Adicionarei testes automatizados para garantir a qualidade do código.`
+#### 2. BankingSystem
+Gerencia o conjunto de contas no sistema, fornecendo validações e regras de negócio para as operações.
 
-6.Autenticação :
-- `Implementarei login/senha para acessar contas.`
+#### 3. TerminalController
+Controla a interface com o usuário e direciona as requisições para o BankingSystem.
 
-## Licença
-Este projeto está licenciado sob a [MIT License](https://github.com/pauloandresdf/bank-account-manager/tree/main?tab=MIT-1-ov-file). 
-Consulte o arquivo LICENSE para mais detalhes
+## 🔧 Instalação e Execução
+
+### Pré-requisitos
+- Java 17 ou superior
+- Maven 3.8.x ou superior
+- Git (opcional)
+
+### Passos para Instalação
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/pauloandresdf/simula-banco-terminal.git
+   cd simula-banco-terminal
+   ```
+
+2. **Compile o projeto**
+   ```bash
+   mvn clean package
+   ```
+
+3. **Execute a aplicação**
+   ```bash
+   java -jar target/simula-banco-terminal-1.0.0.jar
+   ```
+
+## 📝 Guia de Uso
+
+Ao iniciar a aplicação, você terá acesso a um menu interativo com as seguintes opções:
+
+1. **Criar conta**
+   - Informe o nome do titular e número da conta
+   - O sistema validará se o número já existe
+
+2. **Depositar**
+   - Informe o número da conta e valor a depositar
+   - Valores negativos serão rejeitados
+
+3. **Sacar**
+   - Informe o número da conta e valor a sacar
+   - O sistema verificará se há saldo suficiente
+
+4. **Consultar saldo**
+   - Exibe informações detalhadas da conta
+   - Mostra saldo atual e data de criação
+
+5. **Listar todas as contas**
+   - Exibe todas as contas cadastradas no sistema
+   - Mostra número, titular e saldo de cada conta
+
+6. **Consultar histórico de transações**
+   - Exibe o histórico de todas as operações realizadas na conta
+   - Cada transação é registrada com data e hora
+
+7. **Sair**
+   - Encerra a aplicação
+
+## 🧪 Testes
+
+O projeto inclui testes unitários para validar as funcionalidades principais:
+
+```bash
+# Execute os testes
+mvn test
+```
+
+## 📈 Roadmap
+
+Futuras melhorias planejadas para o projeto:
+
+- **Persistência de Dados**
+  - Implementação de armazenamento em banco de dados
+  - Suporte a H2 para desenvolvimento e MySQL/PostgreSQL para produção
+
+- **Novas Funcionalidades**
+  - Transferência entre contas
+  - Pagamento de contas com código de barras
+  - Simulação de rendimentos
+
+- **Segurança**
+  - Autenticação de usuários com senha
+  - Níveis de acesso (cliente/administrador)
+  - Criptografia de dados sensíveis
+
+- **Interface Gráfica**
+  - Migração para aplicação web com Spring Boot e Thymeleaf
+  - Alternativa em JavaFX para aplicação desktop
+
+## 👥 Contribuições
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
+---
+
+Desenvolvido por [Paulo Andre](https://github.com/pauloandresdf) &copy; 2025

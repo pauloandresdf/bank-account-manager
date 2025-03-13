@@ -131,15 +131,6 @@ Ao iniciar a aplicação, você terá acesso a um menu interativo com as seguint
 7. **Sair**
    - Encerra a aplicação
 
-## 🧪 Testes
-
-O projeto inclui testes unitários para validar as funcionalidades principais:
-
-```bash
-# Execute os testes
-mvn test
-```
-
 ## 📈 Roadmap
 
 Futuras melhorias planejadas para o projeto:

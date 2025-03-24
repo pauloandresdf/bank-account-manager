@@ -49,7 +49,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - **Maven**: Ferramenta de automação de build e gerenciamento de dependências
 - **JUnit**: Framework para testes unitários
 
-## 🏗️ Arquitetura
+## 🏗️ Arquitetura:
 
 A aplicação segue uma arquitetura baseada em componentes:
 
